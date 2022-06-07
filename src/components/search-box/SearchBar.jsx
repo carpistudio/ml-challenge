@@ -7,7 +7,7 @@ function SearchBar() {
 
   const navigate = useNavigate();
   const handleSubmit = (query) => {
-    navigate(`/items?search=${query}`);
+    navigate(`/ml-challenge/items?search=${query}`);
     setQuery("");
   }
 
