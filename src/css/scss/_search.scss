@@ -1,0 +1,53 @@
+.searchContainer {
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px 200px;
+
+    @include mobile {
+        padding: 10px 25px;
+    }
+
+    .logo {
+        height: 30px;
+        display: grid;
+        place-items: center;
+    }
+
+    .searchBar {
+        height: 30px;
+        display: flex;
+        flex-grow: 1;
+
+        input,
+        button {
+            height: 100%;
+            border: 0;
+            padding-inline: 10px;
+        }
+
+        input[type=text] {
+            flex-grow: 1;
+            border-radius: 5px 0 0 5px;
+
+            &:focus-visible {
+                outline:0;
+            }
+        }
+
+        button[type=submit] {
+            display: grid;
+            place-items: center;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            
+            img {
+                width: 15px;
+            }
+        }
+    } 
+
+
+}
