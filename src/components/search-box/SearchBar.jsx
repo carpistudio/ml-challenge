@@ -7,7 +7,7 @@ function SearchBar() {
 
   const navigate = useNavigate();
   const handleSubmit = (query) => {
-    navigate(`/ml-challenge/items?search=${query}`);
+    navigate(`/items?search=${query}`);
     setQuery("");
   }
 
@@ -19,7 +19,7 @@ function SearchBar() {
           value={query}
           onChange={(e) => { setQuery(e.currentTarget.value )}}
         />
-        <button type="submit"><img src="./img/search.png" alt="Buscar" /></button>
+        <button type="submit"><img src="/img/search.png" alt="Buscar" /></button>
     </form>
   )
 }

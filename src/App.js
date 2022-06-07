@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <SearchContainer />
       <Routes>
-        <Route exact path="/ml-challenge" element={<Home />} />
-        <Route exact path="/ml-challenge/items" element={<SearchResultsContainer />} />
-        <Route exact path="/ml-challenge/items/:id" element={<ProductDetailContainer />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/items" element={<SearchResultsContainer />} />
+        <Route exact path="/items/:id" element={<ProductDetailContainer />} />
       </Routes>
     </BrowserRouter>
   );
