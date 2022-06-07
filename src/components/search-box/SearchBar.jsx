@@ -19,7 +19,7 @@ function SearchBar() {
           value={query}
           onChange={(e) => { setQuery(e.currentTarget.value )}}
         />
-        <button type="submit"><img src="/img/search.png" alt="Buscar" /></button>
+        <button type="submit"><img src="./img/search.png" alt="Buscar" /></button>
     </form>
   )
 }

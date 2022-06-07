@@ -10,7 +10,7 @@ function Single({product}) {
         <div className="info">
             <div className="info__priceAndShipping">
                 <h4 className="info__price">$ {product.price.amount.toLocaleString('es-AR')}</h4>
-                {product.free_shipping === true && <img src="img/free_shipping.png" alt="Envío gratis" title="Envío gratis" />}
+                {product.free_shipping === true && <img src="./img/free_shipping.png" alt="Envío gratis" title="Envío gratis" />}
             </div>
             <p className="info__title">{product.title}</p>
         </div>
