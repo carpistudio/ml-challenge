@@ -2,6 +2,10 @@
     padding: 16px 200px;
     color: $darker-gray;
 
+    @include mobile {
+        padding: 16px;
+    }
+
     .detail {
         margin-top: 16px;
 
@@ -9,10 +13,18 @@
             display: flex;
             gap: 16px;
 
+            @include mobile {
+                flex-direction: column;
+            }
+
             &__image {
 
                 img {
                     width: 680px;
+
+                    @include mobile {
+                        max-width: 100%;
+                    }
                 }
             }
 
@@ -50,6 +62,10 @@
         .description {
             padding: 32px;
             margin-top: 32px;
+
+            @include mobile {
+                padding: 0;
+            }
 
             h3 {
                 font-size: 28px;
