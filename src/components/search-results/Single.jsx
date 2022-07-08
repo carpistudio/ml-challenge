@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Single({product}) {
   return (
-    <Link to={`/items/${product.id}`} className="results__single">
+    <Link to={product.productlink} className="results__single">
         <div className="image">
             <img src={product.picture} alt={product.title} title={product.title} />
         </div>
