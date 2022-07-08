@@ -17,6 +17,7 @@ function SearchResultsContainer() {
 
         const result = await fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${query}`);
         const data = await result.json();
+        console.log(data);
 
         // Elijo las categorías que tienen más resultados y lo asigno a las categorías para enviar al breadcrumb
         let cats = data.available_filters[0].values
