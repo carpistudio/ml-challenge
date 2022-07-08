@@ -44,7 +44,8 @@ function SearchResultsContainer() {
             picture: prod.thumbnail,
             condition: prod.condition,
             free_shipping: prod.shipping.free_shipping,
-            address: prod.address.state_name
+            address: prod.address.state_name,
+            sellerid: prod.seller.id
           }))
         });
 

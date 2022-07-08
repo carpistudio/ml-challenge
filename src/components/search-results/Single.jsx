@@ -15,7 +15,7 @@ function Single({product}) {
             <p className="info__title">{product.title}</p>
         </div>
         <div className="location">
-          {product.address}
+          {product.sellerid}
         </div>
       </Link>
   )
