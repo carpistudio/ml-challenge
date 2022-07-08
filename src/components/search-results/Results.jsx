@@ -5,6 +5,7 @@ import Single from './Single'
 function Results({products}) {
 
   if(products) {
+    console.log(products);
     return (
       <div className="results">
       {
