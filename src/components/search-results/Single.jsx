@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Single({product}) {
   return (
-    <Link to={product.productlink} className="results__single">
+    <a href={product.productlink} className="results__single">
         <div className="image">
             <img src={product.picture} alt={product.title} title={product.title} />
         </div>
@@ -17,7 +17,7 @@ function Single({product}) {
         <div className="location">
           {product.sellerid}
         </div>
-      </Link>
+      </a>
   )
 }
 
