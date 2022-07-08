@@ -15,7 +15,7 @@ function SearchResultsContainer() {
     const fetchProducts = async () => {
       try {
 
-        const result = await fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${query}&limit=50`);
+        const result = await fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${query}&limit=70`);
         const data = await result.json();
 
         // Elijo las categorías que tienen más resultados y lo asigno a las categorías para enviar al breadcrumb
